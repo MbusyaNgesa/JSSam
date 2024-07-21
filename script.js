@@ -51,7 +51,49 @@ console.log(sum([10, 62, 2, 56]))
 
 // Filter Array: Implement a function that filters out elements from
 // an array based on a given condition.
+console.log("");
 function sumNum(fil){
    return fil.filter((n) => n === 24).toString();
 }
 console.log(sumNum([3,6,8, 7, 24]));
+
+// Mathematical Functions:
+console.log("")
+// Factorial: Write a function to calculate the factorial of a given number.
+function factorial(num){
+   if (num < 0){
+    return -1;
+   }
+   else if (num == 0){
+    return 1;
+   }else{
+    return (num * factorial(num - 1));
+   }
+}
+console.log( factorial(24));
+
+// Prime Number Check: Create a function to check if a number is prime or not.
+
+function prime(pmo){
+    for(let i = 2; i < pmo; i++){
+        if(pmo % i === 0){
+            return "Not a Prime Number";
+        }
+      
+    }
+    return "Prime Number";
+    
+}
+console.log(prime(21))
+// Fibonacci Sequence: Implement a function to generate the Fibonacci sequence 
+// up to a given number of terms. (search on the net)
+function fibo(nums){
+    let n1 = 0, n2 = 1, nextNum;
+
+    for(let i = 1; i <= nums; i++);
+    nextNum = n1 + n2;
+    n1 = n2;
+    n2 = nextNum;
+
+}
+console.log(fibo(10));
