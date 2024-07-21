@@ -30,3 +30,28 @@ function capital(alph){
     return alph.charAt(0).toUpperCase() + alph.slice(1);
 }
 console.log(capital("welcome"));
+
+// Array Functions:
+
+// Find Maximum and Minimum: Write functions to find the maximum
+// and minimum values in an array of numbers.
+
+function maxMin(num){
+    return num.sort((a,b) => a-b );
+}
+console.log(maxMin([12, 7, 27, 4, 9 ,43]));
+
+// Sum of Array: Create a function that calculates the sum of all
+// elements in an array.
+
+function sum(arr){
+    return arr.reduce((a,b) => a + b);
+}
+console.log(sum([10, 62, 2, 56]))
+
+// Filter Array: Implement a function that filters out elements from
+// an array based on a given condition.
+function sumNum(fil){
+   return fil.filter((n) => n === 24).toString();
+}
+console.log(sumNum([3,6,8, 7, 24]));
